@@ -1,7 +1,6 @@
 import React from 'react';
 
-export default function BookArticle(prop) {
-
+function BookArticle(prop) {
     return (
         <a href={prop.url} className='book--link'>
             <div className='book--image--container'>
@@ -13,3 +12,5 @@ export default function BookArticle(prop) {
         </a>
     )
 }
+
+export default BookArticle;

@@ -5,16 +5,7 @@ import ArticleType2 from './ArticleType2';
 export default function FrontPageArticles() {
     const news = useContext(ApiContext);
     const us = news.us;
-    const tempData = us.map(item => {
-        if(item.section === 'U.S.' && item.subsection === 'Politics'){
-            return item
-        }
-    });
-    const data = tempData.filter(item => {
-        if(item !== undefined){
-            return item
-        }
-    });
+    const data = us.filter((item) => (item.section === 'U.S.' && item.subsection === 'Politics'));
 
     const myData = data.slice(0, 4);
 

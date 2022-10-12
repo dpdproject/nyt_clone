@@ -5,16 +5,7 @@ import ArticleType2 from './ArticleType2';
 export default function FrontPageArticles() {
     const news = useContext(ApiContext);
     const world = news.world;
-    const tempData = world.map(item => {
-        if(item.section === 'World' && item.subsection === 'Europe'){
-            return item
-        }
-    });
-    const data = tempData.filter(item => {
-        if(item !== undefined){
-            return item
-        }
-    });
+    const data = world.filter((item) => (item.section === 'World' && item.subsection === 'Europe'));
 
     const myData = data.slice(0, 6);
 
@@ -41,7 +32,7 @@ export default function FrontPageArticles() {
 
     return <>
         <div className='section--title'>
-            <h2>World News</h2>
+            <h2>Latest News</h2>
         </div>
         <section className='frontpage'>
             <div className={myDataLive[0] === 'Live Blog Post' ? 'article--live' : 'hidden'}>

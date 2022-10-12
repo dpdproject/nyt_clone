@@ -5,30 +5,22 @@ import ArticleType2 from './ArticleType2';
 export default function FrontPageArticles() {
     const news = useContext(ApiContext);
     const business = news.business;
-    const tempData = business.map(item => {
-        if(item.section === 'Business' && item.subsection === 'Economy'){
-            return item
-        }
-    });
-    const data = tempData.filter(item => {
-        if(item !== undefined){
-            return item
-        }
-    });
+
+    const data = business.filter((item) => (item.section === 'Business' && item.subsection === 'Economy'));
 
     const myData = data.slice(0, 4);
 
-    const myDataLive = myData.map(item => item.material_type_facet)
-    const myDataUrl = myData.map(item => item.url)
-    const myDataTitles = myData.map(item => item.title)
-    const myDataAbstract = myData.map(item => item.abstract)
-    const myDataImages = myData.map(item => item.multimedia[2])
-    const myDataImgUrl = myDataImages.map(item => item.url)
-    const myDataImgCopyright = myDataImages.map(item => item.copyright)
-    const myDataImgCaption = myDataImages.map(item => item.caption)
+    const myDataLive = myData.map((item) => (item.material_type_facet))
+    const myDataUrl = myData.map((item) => (item.url))
+    const myDataTitles = myData.map((item) => (item.title))
+    const myDataAbstract = myData.map((item) => (item.abstract))
+    const myDataImages = myData.map((item) => (item.multimedia[2]))
+    const myDataImgUrl = myDataImages.map((item) => (item.url))
+    const myDataImgCopyright = myDataImages.map((item) => (item.copyright))
+    const myDataImgCaption = myDataImages.map((item) => (item.caption))
 
     const tempOtherData = myData.slice(2, 4);
-    const otherData = tempOtherData.map(item => {
+    const otherData = tempOtherData.map((item) => {
         return (
             <ArticleType2
                 key = {item.uri}
