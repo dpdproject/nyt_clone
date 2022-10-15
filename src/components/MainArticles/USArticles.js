@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
-import { ApiContext } from '../context/ApiContext';
-import ArticleType2 from './ArticleType2';
+import { ApiContext } from '../../context/ApiContext';
+
+import './articles.css';
+
+import ArticleType2 from '../ArticleType2/ArticleType2';
 
 export default function FrontPageArticles() {
     const news = useContext(ApiContext);

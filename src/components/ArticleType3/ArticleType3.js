@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './articletype3.css';
 
 export default function ArtType2(prop) {
 

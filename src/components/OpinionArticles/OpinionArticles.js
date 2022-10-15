@@ -1,7 +1,9 @@
 import React, { useContext } from 'react';
-import { ApiContext } from '../context/ApiContext';
+import { ApiContext } from '../../context/ApiContext';
 
-import ArticleType2 from './ArticleType2';
+import './opinionarticles.css';
+
+import ArticleType2 from '../ArticleType2/ArticleType2';
 
 export default function RightSection() {
 
@@ -35,22 +37,22 @@ export default function RightSection() {
         <div className='section--title'>
             <h2>Opinion</h2>
         </div>
-        <section className='right--container'>
-            <div className='right--first--article'>
+        <section className='opinion--container'>
+            <div className='opinion--first--article'>
                 <div>
                     <img 
                         src={imgUrl[0] ? imgUrl[0] : null} 
                         alt={imgCaption ? imgCaption[0] : imgCopyright[0]} 
-                        className='right--img' 
+                        className='opinion--img' 
                     />
                     <figcaption>{imgCopyright[0]}</figcaption>
                 </div>
-                <div className='right--text'>
+                <div className='opinion--text'>
                     <h4 className='byline'>{byline[0]}</h4>
-                    <h1 className='right--title'>
+                    <h1>
                         <a href={url[0]}>{titles[0]}</a>
                     </h1>
-                    <h3 className='right--abstract'>{abstract[0]}</h3>
+                    <h3>{abstract[0]}</h3>
                 </div>
             </div>
             <div className='article--split'>

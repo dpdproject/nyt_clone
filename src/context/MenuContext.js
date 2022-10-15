@@ -19,5 +19,4 @@ const MenuContextProvider = ({children}) => {
     )
 }
 
-
 export { MenuContext, MenuContextProvider }

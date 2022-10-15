@@ -1,4 +1,5 @@
 import React from 'react';
+import './articletype2.css';
 
 export default function ArticleType2(prop) {
   return (

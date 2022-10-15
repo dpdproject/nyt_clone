@@ -1,11 +1,13 @@
 import React, { useState, useContext } from 'react';
 import { Link } from "react-router-dom";
-import { MenuContext } from '../context/MenuContext';
-import logo from "../images/nyt-logo.png";
+import { MenuContext } from '../../context/MenuContext';
+import logo from "../../images/nyt-logo.png";
 import { IoMdMenu, IoIosSearch } from "react-icons/io";
 
-import Search from "./Search";
-import Menu from './Menu';
+import './navbar.css';
+
+import Search from "../Search/Search";
+import Menu from '../Menu/Menu';
 
 export default function Navbar(props) {
 

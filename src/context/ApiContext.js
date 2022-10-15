@@ -10,7 +10,7 @@ const ApiContextProvider = ({children}) => {
     const [news, setNews] = useState()
 
     useEffect(() => {
-        let url = 'https://api.nytimes.com/svc/news/v3/content/all/all.json?limit=500&api-key=muwuqG0SCYHd9QRaGUTqbUze3GfAeYCj';
+        let url = `https://api.nytimes.com/svc/news/v3/content/all/all.json?limit=500&api-key=${process.env.REACT_APP_API_KEY}`;
 
         axios.get(url)
         .then(res => { 
@@ -60,10 +60,6 @@ const ApiContextProvider = ({children}) => {
             }));
         });
     }, [])
-
-
-    
-
 
     return (
         <ApiContext.Provider value={news}>

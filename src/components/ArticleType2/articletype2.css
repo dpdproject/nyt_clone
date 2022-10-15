@@ -1,0 +1,11 @@
+/* ARTICLE TYPE 2 */
+
+.typeTwo--title {
+    border-top: var(--lightBorder);
+    padding-top: 1rem;
+  }
+  
+  .typeTwo--abstract {
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+  }

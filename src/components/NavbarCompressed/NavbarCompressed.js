@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
-import { MenuContext } from '../context/MenuContext';
+import { MenuContext } from '../../context/MenuContext';
 import { Link } from "react-router-dom";
-import logo from "../images/nyt-logo.png";
+import logo from "../../images/nyt-logo.png";
 import { IoMdMenu, IoMdContact, IoMdClose } from "react-icons/io";
 
-import MenuCompressed from './MenuCompressed';
+import './navbarcompressed.css';
+
+import MenuCompressed from '../MenuCompressed/MenuCompressed';
 
 export default function NavbarCompressed(props) {
     

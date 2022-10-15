@@ -1,0 +1,46 @@
+/* ARTICLE TYPE 3 */
+
+.typeThree--img {
+    width: 100%;
+  }
+  
+  @media screen and (min-width:900px) {
+  
+    .typeThree {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+  
+    .typeThree--article a {
+      max-width: 20rem;
+    }
+  
+    .typeThree--img {
+      width: 10rem;
+      margin-left: 10px;
+    }
+  
+    .typeThree--title {
+      font-size: 1rem;
+    }
+  
+    .typeThree--abstract {
+      font-size: 14px;
+    }
+    
+  }
+  
+  @media screen and (min-width: 1200px) {
+  
+    .typeThree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .typeThree--img {
+      width: 100%;
+    }
+  
+  }

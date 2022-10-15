@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
-import { MenuContext } from '../context/MenuContext';
+import { MenuContext } from '../../context/MenuContext';
+
+import './menu.css';
 
 export default function Menu() {
 

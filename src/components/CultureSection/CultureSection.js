@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
-import { ApiContext } from '../context/ApiContext';
-import ArticleType3 from './ArticleType3';
+import { ApiContext } from '../../context/ApiContext';
+
+import './culturesection.css';
+
+import ArticleType3 from '../ArticleType3/ArticleType3';
 
 export default function CultureSection() {
 

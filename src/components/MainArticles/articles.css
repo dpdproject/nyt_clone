@@ -1,0 +1,98 @@
+/* FOR "FRONTPAGE ARTICLES", "US ARTICLES" AND "BUSINESS ARTICLES" PAGES */
+
+.frontpage {
+    padding: 0 1rem;
+    z-index: -1;
+}
+  
+.frontpage--title { 
+    margin: 0.5rem 0;
+}
+  
+.frontpage--abstract {
+    margin-bottom: 1rem;
+}
+  
+.frontpage--img--container {
+    position: relative;
+}
+  
+.frontpage--img {
+    width: 100%;
+    margin: 2rem 0;
+}
+  
+.frontpage--img--caption {
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+    .frontpage--firstline {
+      display: flex;
+    }
+  
+    .frontpage--img--container {
+      min-width: 65%;
+      margin-left: 1rem;
+    }
+  
+    .frontpage--img {
+      margin: 0;
+    }
+  
+    .frontpage--img--caption {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-weight: bold;
+      color: white;
+    }
+  
+    .frontpage--link {
+      display: flex;
+      flex-direction: column;
+      max-width: 30%;
+    }
+  
+    .typeTwo {
+      padding: 0.5rem 1rem 0 0;
+    }
+  
+    .typeTwo--grid {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+}
+  
+@media screen and (min-width: 1200px) {
+    .frontpage--firstline {
+     position: relative;
+     min-height: 25rem;
+    }
+  
+    .frontpage--img--container {
+      position: absolute;
+      right: 0;
+      top: 0;
+      min-width: 65%;
+      margin-left: 1rem;
+    }
+  
+    .frontpage--img {
+      margin: 0;
+    }
+  
+    .frontpage--img--caption {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-weight: bold;
+    }
+  
+    .frontpage--link {
+      width: 30%;
+    }
+}

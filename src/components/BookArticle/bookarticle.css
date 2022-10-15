@@ -1,0 +1,30 @@
+/* BOOK ARTICLE STYLE */
+
+.book--link {
+    display: flex;
+    flex-direction: column;
+}
+
+.book--image--container {
+    min-height: 20rem;
+}
+
+.book--image{
+    width: 25rem;
+}
+
+.book--title {
+    margin-bottom: 1rem;
+    height: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .book--image--container {
+      min-height: 17rem;
+    }
+  
+    .book--image {
+      width: 20rem;
+    }
+}

@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
-import { ApiContext } from '../context/ApiContext';
+import { ApiContext } from '../../context/ApiContext';
+import './booksection.css';
 
-import BookArticle from './BookArticle';
+import BookArticle from '../BookArticle/BookArticle';
 
 export default function BookSection() {
 

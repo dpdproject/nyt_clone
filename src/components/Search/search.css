@@ -1,0 +1,41 @@
+/* SEARCH FUNCTION */
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+  
+.search--input {
+    height: 2rem;
+    width: 100%;
+  
+    border: 1px solid black;
+    border-radius: var(--mainRadius);
+  
+    text-indent: 0.5rem;
+    text-transform: uppercase;
+}
+  
+@media screen and (min-width: 1200px) {
+  
+    .search {
+      position:absolute;
+      top: 0.25rem;
+      left: 7rem;
+    
+      display: flex;
+      
+    }
+    
+    .search--input {
+      height: 2rem;
+      width: 12rem;
+    
+      border: 1px solid black;
+      border-radius: var(--mainRadius);
+    
+      text-indent: 0.5rem;
+      text-transform: uppercase;
+    }
+  
+}

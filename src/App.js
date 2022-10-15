@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useContext } from 'react';
 import { ResizeContext } from "./context/ResizeContext";
 
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Error from './pages/Error';
-import NavbarCompressed from "./components/NavbarCompressed";
+import NavbarCompressed from "./components/NavbarCompressed/NavbarCompressed";
 
 function App() {
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import './bookarticle.css';
 
 function BookArticle(prop) {
     return (

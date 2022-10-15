@@ -6,7 +6,6 @@ const ResizeContext = createContext();
 // create the provider
 const ResizeContextProvider = ({children}) => {
 
-
     const [sizeWindow, SetSizeWindow] = useState({
         width: window.innerWidth
     });
@@ -29,6 +28,5 @@ const ResizeContextProvider = ({children}) => {
         </ResizeContext.Provider>
     )
 }
-
 
 export { ResizeContext, ResizeContextProvider }
