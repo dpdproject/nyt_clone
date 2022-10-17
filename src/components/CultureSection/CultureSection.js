@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ApiContext } from '../../context/ApiContext';
+import { DataContext } from '../../context/DataContext';
 
 import './culturesection.css';
 
@@ -7,7 +7,7 @@ import ArticleType3 from '../ArticleType3/ArticleType3';
 
 export default function CultureSection() {
 
-    const news = useContext(ApiContext);
+    const news = useContext(DataContext);
     const arts = news.arts;
 
     // TAKE THE FIRST NEWS 

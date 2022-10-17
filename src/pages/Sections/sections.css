@@ -1,0 +1,163 @@
+:root {
+    --mainRadius: 4px;
+  
+    --lightShadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  
+    --lightBorder: 0.5px solid rgb(203, 203, 203);
+    --darkBorder: 1px solid rgb(62, 62, 62);
+  
+    --greyColor: rgb(62, 62, 62);
+    --lightGreyColor: rgb(203, 203, 203);
+    --buttonColor: rgb(76, 93, 149);
+  
+  
+    --fontsizeH4: 12px;
+    --fontsizeH3: 14px;
+    --fontsizeH2: 17px;
+    --fontsizeH1: 19px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* SECTIONS */
+
+section {
+    padding: 1.5rem;
+}
+
+.sections--nav {
+    margin-top: 3rem;
+    padding: 1.5rem;
+}
+
+.sections--nav h1 {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+}
+
+.sections--nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: var(--lightBorder);
+
+    list-style: none;
+    text-transform: uppercase;
+    font-size: var(--fontsizeH4);
+}
+
+
+.sections--articles {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sections--image {
+    display: flex;
+    flex-direction: column;
+}
+
+.sections--image img {
+    width: 100%;
+}
+
+.sections--image figcaption {
+    margin: 0.5rem 0;
+}
+
+.sections--text {
+    padding-bottom: 1.5rem;
+}
+
+.sections--text h1 {
+    margin: 0.5rem 0;
+}
+
+
+.typeThree {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 3rem 0;
+    border-bottom: var(--lightBorder);
+}
+
+.typeThree a {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+.typeThree--img {
+    width: 100%;
+}
+
+.typeThree--title {
+    margin: 1rem 0;
+}
+
+.typeThree--abstract {
+    font-size: 14px;
+}
+
+.sections--byline {
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (min-width: 700px) {
+    .articles--first--block,
+    .articles--second--block {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+        border-bottom: var(--lightBorder);
+    }
+
+    .articles--second--block {
+        padding-bottom: 3rem;
+    }
+
+    .typeThree {
+        max-width: 70%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .second--block {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .sections--text {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .second--block img {
+        width: 15rem;
+        margin-right: 1rem;
+    }
+
+    .second--block figcaption {
+        display: none;
+    }
+
+    .typeThree {
+        flex-direction: row-reverse;
+    }
+
+    .typeThree--img {
+        max-width: 20rem;
+    }
+}

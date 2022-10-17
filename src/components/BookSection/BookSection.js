@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import { ApiContext } from '../../context/ApiContext';
+import { DataContext } from '../../context/DataContext';
 import './booksection.css';
 
 import BookArticle from '../BookArticle/BookArticle';
 
 export default function BookSection() {
 
-    const news = useContext(ApiContext);
+    const news = useContext(DataContext);
     const books = news.books;
     
     let book = books.map(item => {

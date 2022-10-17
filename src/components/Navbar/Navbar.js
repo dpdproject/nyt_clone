@@ -62,9 +62,8 @@ export default function Navbar(props) {
             <div className="navbar--thirdline">
                 <ul className='thirdline--list'>
                     <Link to="/section/world/">World</Link>
-                    <Link to="/section/usnews/">U.S. News</Link>
-                    <Link to="/section/politics/">Politics</Link>
-                    <Link to="/section/ny/">N.Y.</Link>
+                    <Link to="/section/us/">U.S. News</Link>
+                    <Link to="/section/nynews/">N.Y.</Link>
                     <Link to="/section/business/">Business</Link>
                     <Link to="/section/opinion/">Opinion</Link>
                     <Link to="/section/tech/">Tech</Link>

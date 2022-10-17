@@ -25,20 +25,20 @@ export default function Menu() {
                     <ul>
                         <Link to='/section/world/'>World</Link>
                         <Link to='/section/coronavirus/'>Coronavirus</Link>
-                        <Link to='/section/usnews/'>U.S.</Link>
-                        <Link to='/section/world/'>Politics</Link>
-                        <Link to='/section/world/'>New York</Link>
-                        <Link to='/section/world/'>Business</Link>
-                        <Link to='/section/world/'>Tech</Link>
-                        <Link to='/section/world/'>Science</Link>
-                        <Link to='/section/world/'>Climate</Link>
-                        <Link to='/section/world/'>Sport</Link>
-                        <Link to='/section/world/'>Wildfire Tracker</Link>
-                        <Link to='/section/world/'>Obituaries</Link>
-                        <Link to='/section/world/'>The Upshot</Link>
-                        <Link to='/section/world/'>Today's Paper</Link>
-                        <Link to='/section/world/'>Corrections</Link>
-                        <Link to='/section/world/'>Trending</Link>
+                        <Link to='/section/us/'>U.S.</Link>
+                        <Link to='/section/us/politics/'>Politics</Link>
+                        <Link to='/section/nynews/'>New York</Link>
+                        <Link to='/section/business/'>Business</Link>
+                        <Link to='/section/tech/'>Tech</Link>
+                        <Link to='/section/science/'>Science</Link>
+                        <Link to='/section/climate/'>Climate</Link>
+                        <Link to='/section/sport/'>Sport</Link>
+                        <Link to='/section/wildfiretracker/'>Wildfire Tracker</Link>
+                        <Link to='/section/obituaries/'>Obituaries</Link>
+                        <Link to='/section/theupshot/'>The Upshot</Link>
+                        <Link to='/section/todayspaper/'>Today's Paper</Link>
+                        <Link to='/section/corrections/'>Corrections</Link>
+                        <Link to='/section/trending/'>Trending</Link>
                     </ul>
                 </div>
             </section>

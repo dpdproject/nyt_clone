@@ -1,17 +1,15 @@
 import React from 'react';
 import './bookarticle.css';
 
-function BookArticle(prop) {
+export default function BookArticle(props) {
     return (
-        <a href={prop.url} className='book--link'>
+        <a href={props.url} className='book--link'>
             <div className='book--image--container'>
-                <img src={prop.imageUrl} alt={prop.imageCopyright} className='book--image' />
-                <figcaption className='book-caption'>{prop.imageCaption ? prop.imageCaption : `Copyright: ${prop.imageCopyright}`}</figcaption>
+                <img src={props.imageUrl} alt={props.imageCopyright} className='book--image' />
+                <figcaption className='book-caption'>{props.imageCaption ? props.imageCaption : `Copyright: ${props.imageCopyright}`}</figcaption>
             </div>
-            <h1 className='book--title'>{prop.title}</h1>
-            <h3 className='book--abstract'>{prop.abstract}</h3>
+            <h1 className='book--title'>{props.title}</h1>
+            <h3 className='book--abstract'>{props.abstract}</h3>
         </a>
     )
 }
-
-export default BookArticle;

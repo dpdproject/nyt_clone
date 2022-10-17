@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { ApiContext } from '../../context/ApiContext';
+import { DataContext } from '../../context/DataContext';
 import './articles.css';
 
 import ArticleType2 from '../ArticleType2/ArticleType2';
 
 export default function FrontPageArticles() {
-    const news = useContext(ApiContext);
+    const news = useContext(DataContext);
     const business = news.business;
 
     const data = business.filter((item) => (item.section === 'Business' && item.subsection === 'Economy'));
@@ -54,11 +54,11 @@ export default function FrontPageArticles() {
                 </div>
                 <div className='frontpage--img--container'>
                     <img 
-                        src={myDataImgUrl[1]}
-                        alt= {myDataImgCaption[1]}
+                        src={myDataImgUrl[0]}
+                        alt= {myDataImgCaption[0]}
                         className='frontpage--img'
                     />
-                    <p className='frontpage--img--caption'>{myDataImgCopyright[1]}</p>
+                    <p className='frontpage--img--caption'>{myDataImgCopyright[0]}</p>
                 </div>
             </div>
             <div className='typeTwo--grid'>

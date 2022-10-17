@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ApiContext } from '../../context/ApiContext';
+import { DataContext } from '../../context/DataContext';
 
 import './opinionarticles.css';
 
@@ -7,7 +7,7 @@ import ArticleType2 from '../ArticleType2/ArticleType2';
 
 export default function RightSection() {
 
-    const news = useContext(ApiContext);
+    const news = useContext(DataContext);
     const tempOpinion = news.opinion;
     const opinion = tempOpinion.filter(item => item.title !== "")
     

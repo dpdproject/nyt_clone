@@ -18,19 +18,19 @@ export default function Footer() {
                 <Link to='/section/world/'>world</Link>
                 <Link to='/section/coronavirus/'>coronavirus</Link>
                 <Link to='/section/usnews/'>U.S.</Link>
-                <Link to='/section/world/'>politics</Link>
-                <Link to='/section/world/'>new york</Link>
-                <Link to='/section/world/'>business</Link>
-                <Link to='/section/world/'>tech</Link>
-                <Link to='/section/world/'>science</Link>
-                <Link to='/section/world/'>climate</Link>
-                <Link to='/section/world/'>sport</Link>
-                <Link to='/section/world/'>wildfire tracker</Link>
-                <Link to='/section/world/'>obituaries</Link>
-                <Link to='/section/world/'>the upshot</Link>
-                <Link to='/section/world/'>today's paper</Link>
-                <Link to='/section/world/'>corrections</Link>
-                <Link to='/section/world/'>trending</Link>
+                <Link to='/section/politics/'>politics</Link>
+                <Link to='/section/nynews/'>new york</Link>
+                <Link to='/section/business/'>business</Link>
+                <Link to='/section/tech/'>tech</Link>
+                <Link to='/section/science/'>science</Link>
+                <Link to='/section/climate/'>climate</Link>
+                <Link to='/section/sport/'>sport</Link>
+                <Link to='/section/wildfiretracker/'>wildfire tracker</Link>
+                <Link to='/section/obituaries/'>obituaries</Link>
+                <Link to='/section/theupshot/'>the upshot</Link>
+                <Link to='/section/todayspaper/'>today's paper</Link>
+                <Link to='/section/corrections/'>corrections</Link>
+                <Link to='/section/trending/'>trending</Link>
             </div>
             <div className='footer--links'>
                 <h2>Opinion</h2>
@@ -45,8 +45,8 @@ export default function Footer() {
             <div className='footer--links'>
                 <h2>Arts</h2>
                 <Link to='/section/todaysarts/'>today's arts</Link>
-                <Link to='/section/artanddesign/'>art &amp; design</Link>
-                <Link to='/section/book/'>books</Link>
+                <Link to='/section/arts/'>art &amp; design</Link>
+                <Link to='/section/books/'>books</Link>
                 <Link to='/section/bestsellerbooklist/'>best sellers book list</Link>
                 <Link to='/section/dance/'>dance</Link>
                 <Link to='/section/movies/'>movies</Link>
@@ -61,7 +61,7 @@ export default function Footer() {
                 <Link to='/section/automotive/'>automotive</Link>
                 <Link to='/section/games/'>games</Link>
                 <Link to='/section/education/'>education</Link>
-                <Link to='/section/Food/'>Food</Link>
+                <Link to='/section/food/'>food</Link>
                 <Link to='/section/health/'>health</Link>
                 <Link to='/section/jobs/'>jobs</Link>
                 <Link to='/section/love/'>love</Link>

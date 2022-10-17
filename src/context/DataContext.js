@@ -1,38 +1,37 @@
 import { createContext, useState, useEffect } from "react";
-import axios from "axios";
+
+import ClientAPI from "../components/ClientAPI";
 
 // create the context
-const ApiContext = createContext();
+const DataContext = createContext();
 
 // create the provider
-const ApiContextProvider = ({children}) => {
+const DataContextProvider = ({children}) => {
 
+    // take fetched data from ClientAPI Component 
+    const data = ClientAPI();
+
+    // create a State for the final data
     const [news, setNews] = useState()
 
     useEffect(() => {
-        let url = `https://api.nytimes.com/svc/news/v3/content/all/all.json?limit=500&api-key=${process.env.REACT_APP_API_KEY}`;
-
-        axios.get(url)
-        .then(res => { 
-            
-            let data = res.data.results;
-
+        
+        if(data !== undefined) {
+    
             function formatData(data) {
-
+            
                 let tempData = data.filter(item => item.multimedia !== null);
 
                 let newTempData = tempData.map(item => {
-                    let images = item.multimedia;
-                    let image = images.map(image => image.url)
-
-                    let newData = {...item, image};
+                    let images = item.multimedia[2]
+                    let newData = {...item, images};
                     return newData
                 });
                 return newTempData
-            }
+            };
 
-            let newData = formatData(data)
-
+            const newData = formatData(data);
+            
             let world = newData.filter(result => result.section === "World");
             let us = newData.filter(result => result.section === "U.S.");
             let books = newData.filter(result => result.section === "Books");
@@ -40,10 +39,13 @@ const ApiContextProvider = ({children}) => {
             let business = newData.filter(result => result.section === "Business");
             let opinion = newData.filter(result => result.section === "Opinion");
             let podcast = data.filter(result => result.section === "Podcasts");
-            let science = newData.filter(result => result.section === "Science");
+            let tech = newData.filter(result => result.section === "Technology");
             let arts = newData.filter(result => result.section === "Arts");
             let style = newData.filter(result => result.section === "Style");
-
+            let sports = newData.filter(result => result.section === "Sports");
+            let food = newData.filter(result => result.section === "Food");
+            let realestate = newData.filter(result => result.section === "Real Estate");
+            
             setNews(prevState => ({
                 ...prevState,
                 data,
@@ -54,21 +56,25 @@ const ApiContextProvider = ({children}) => {
                 business,
                 opinion,
                 podcast,
-                science,
+                tech,
                 arts,
-                style
+                style,
+                sports,
+                food,
+                realestate
             }));
-        });
-    }, [])
+        }
+
+    }, [data])
 
     return (
-        <ApiContext.Provider value={news}>
+        <DataContext.Provider value={news}>
             {children} 
-        </ApiContext.Provider>
+        </DataContext.Provider>
     )
 };
 
 // create the consumer
-const ApiContextConsumer = ApiContext.Consumer;
+const DataContextConsumer = DataContext.Consumer;
 
-export { ApiContext, ApiContextProvider, ApiContextConsumer }
+export { DataContext, DataContextProvider, DataContextConsumer }
