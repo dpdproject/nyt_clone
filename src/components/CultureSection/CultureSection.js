@@ -3,7 +3,7 @@ import { DataContext } from '../../context/DataContext';
 
 import './culturesection.css';
 
-import ArticleType3 from '../ArticleType3/ArticleType3';
+import ArticleType4 from '../ArticleType4/ArticleType4';
 
 export default function CultureSection() {
 
@@ -29,7 +29,7 @@ export default function CultureSection() {
 
     const secondaryArticles = newData.map(item => {
         return (
-            <ArticleType3
+            <ArticleType4
                 key = {item.uri}
                 url = {item.url}
                 title = {item.title}
