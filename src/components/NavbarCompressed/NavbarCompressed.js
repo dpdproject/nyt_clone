@@ -29,9 +29,7 @@ export default function NavbarCompressed(props) {
             </div>
             {isOpen ? <MenuCompressed /> : null}
             <div className="navbar--secondline">
-                <div>
-                    <h5>{props.date}</h5>
-                </div>
+                <h5>{props.date}</h5>
                 <Link to='/subscription_campaign/'>
                     Subscribe for €0.50/Week
                 </Link>
